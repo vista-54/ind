@@ -25,7 +25,7 @@ import com.customlbs.library.callbacks.IndoorsServiceCallback;
 import com.customlbs.library.callbacks.LoadingBuildingStatus;
 import com.customlbs.shared.Coordinate;
 
-public class indoors extends CordovaPlugin implements IndoorsLocationListener {
+public class indoors extends CordovaPlugin implements IndoorsLocationListener {  
 
 	private CallbackContext callbackContext;
 	private Indoors indoors;
@@ -214,4 +214,5 @@ public class indoors extends CordovaPlugin implements IndoorsLocationListener {
     public void loadingBuilding(LoadingBuildingStatus lbs) {
         sendResult("loadingBuilding", String.valueOf(lbs.getProgress()), "success", PluginResult.Status.OK);
     }
+    
 }
