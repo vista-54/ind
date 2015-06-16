@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
   xmlns:android="http://schemas.android.com/apk/res/android"
-  id="com.phonegap.plugins.Indoors"
+  id="com.phonegap.plugins.indoors"
   version="1.0.0">
 
     <engines>
@@ -16,7 +16,7 @@
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="plugins">
-            <plugin name="Indoors" value="com.phonegap.plugins.Indoors" />
+            <plugin name="indoors" value="com.phonegap.plugins.indoors" />
         </config-file>
 
         <source-file src="Android/src/com/phonegap/plugins/indoors.java" target-dir="src/com/adobe/plugins/" />
