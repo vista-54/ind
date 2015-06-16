@@ -54,7 +54,7 @@ public class indoors extends CordovaPlugin implements IndoorsLocationListener {
 //            	    params.setTrackingInterval(10000);				// how often data is queued up to be sent to the server later (see BatchPushInterval)
 //            	    params.setPositionCalculationInterval(1000);	// how often to calculate a position internally
 //            	    params.setPositionUpdateInterval(0);			// how often a calculated position (see PositionCalculationInterval) is sent to the UI
-               	    indoors.setLocatedCloudBuilding(buildingId, params);
+               	    indoors.setLocatedCloudBuilding(buildingId, params, true);
             	    indoors.registerLocationListener(self);
             	    
             		sendResult("connected", "success", "success", PluginResult.Status.OK);
