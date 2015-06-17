@@ -11,9 +11,9 @@
     <name>Indoors</name>
     <description>
     </description>
-    <!--
+    <!-- -->
 	<asset src="www/indoors.js" target="indoors.js" />
-    -->
+    
     <js-module src="www/indoors.js" name="indoors">
         <clobbers target="indoors" />
     </js-module>
