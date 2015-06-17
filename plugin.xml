@@ -19,8 +19,9 @@
             <plugin name="indoors" value="com.phonegap.plugins.indoors" />
         </config-file>
 
-        <source-file src="Android/src/com/phonegap/plugins/indoors.java" target-dir="src/com/adobe/plugins/" />
-        <source-file src="Android/indoors-library-surface.jar" target-dir="libs" />
+        <source-file src="Android/src/com/phonegap/plugins/indoors.java" target-dir="src/com/adobe/plugins" />
+        <source-file src="Android/indoors-library-surface.jar" target-dir="libs" framework="true" />
         <source-file src="Android/libs/armeabi-v7a/libIndoorsLocator.so" target-dir="libs/armeabi/" />
+        <source-file src="Android/libs/armeabi-v7a/libIndoorsLocator.so" target-dir="libs/armeabi-v7a/" />
     </platform>
 </plugin>
