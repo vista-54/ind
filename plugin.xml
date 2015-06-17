@@ -11,11 +11,15 @@
     <name>Indoors</name>
     <description>
     </description>
-  
+    <!--
 	<asset src="www/indoors.js" target="indoors.js" />
+    -->
+    <js-module src="www/indoors.js" name="indoors">
+        <clobbers target="indoors" />
+    </js-module>
 
     <platform name="android">
-        <config-file target="res/xml/config.xml" parent="plugins">
+        <config-file target="res/xml/config.xml" parent="/*">
         <!--
             <plugin name="indoors" value="com.phonegap.plugins.indoors" />
             -->
