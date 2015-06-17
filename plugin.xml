@@ -16,7 +16,12 @@
 
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="plugins">
+        <!--
             <plugin name="indoors" value="com.phonegap.plugins.indoors" />
+            -->
+            <feature name="indoors">
+                <param name="android-package" value="com.phonegap.plugins.indoors" />
+            </feature>
         </config-file>
 
         <source-file src="Android/src/com/phonegap/plugins/indoors.java" target-dir="src/com/adobe/plugins" />
